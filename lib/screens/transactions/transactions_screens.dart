@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TransactionsScreens extends StatelessWidget {
   const TransactionsScreens({super.key});
@@ -24,7 +25,7 @@ class TransactionsScreens extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
             const SizedBox(
@@ -32,10 +33,10 @@ class TransactionsScreens extends StatelessWidget {
             ),
             Text(
               "Transactions",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w900,
-                  fontSize: Theme.of(context).textTheme.titleLarge!.fontSize),
+              style: GoogleFonts.poppins(
+                textStyle: const TextStyle(
+                    color: Colors.black, letterSpacing: .5, fontSize: 30),
+              ),
             )
           ],
         ),
